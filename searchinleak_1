@@ -1,0 +1,1 @@
+cat out.txt | grep "\.ru" | awk -F ":" '{ if($10=="F") print }' | awk -F ":" '{ if($8>"1999-01-01" && $8<"2000-01-01") print }'
